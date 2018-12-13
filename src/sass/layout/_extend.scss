@@ -1,0 +1,91 @@
+@import 'base/_color';
+@import 'base/_variables';
+@import 'layout/_mixin';
+
+%parallax {  
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+	padding: 80px 0;
+}
+
+%no-padding {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+%bold-text {
+	font-family: $form-font;
+	font-size: 45px;
+
+	sup {
+		line-height: 100%;
+	    font-size: 35%;
+	    position: absolute;
+	    top: 30px;
+	}
+}
+
+%form {
+	background-color: #DFD8C9;
+    padding: 25px 75px;
+	box-shadow: 0px 20px 30px -15px $shadow;
+
+	@include respond-to(tablets) {
+		padding: 25px 30px;
+	}
+
+	@include respond-to(handhelds) {
+		padding: 25px;
+	}
+
+	.signup_email {
+	    border-radius: 0px;
+	    border: none;
+	    margin-left: 5px;
+
+		@include respond-to(tablets) {
+			margin-left: 0px !important;
+		}
+
+	    @include respond-to(handhelds) {
+			margin-left: 0px !important;
+		}
+	}
+
+	.mail_button {
+	    background: $button !important;
+	    border-color: $button !important;
+	    border-radius: 0px !important;
+	    padding: 8px 0px;
+	    margin-left: -5px;
+
+		@include respond-to(tablets) {
+			margin-left: 0px !important;
+		}
+		
+		@include respond-to(handhelds) {
+			margin-left: 0px !important;
+		}
+
+	}
+
+	p {
+		font-size: 22px;
+		margin-top: 25px;
+
+		@include respond-to(tablets) {
+			font-size: 18px !important;
+		}
+
+	    @include respond-to(handhelds) {
+			font-size: 18px !important;
+		}
+	}
+
+	h1 {
+		@extend %bold-text;
+	}
+}
+
