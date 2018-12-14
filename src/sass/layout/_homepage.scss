@@ -20,6 +20,17 @@ body {
 
 	.form {
 	    @extend %form;
+
+	    h1 {
+	    	margin-bottom: 0px !important;
+	    }
+
+	    h3 {
+		    font-size: 35px;
+		    font-family: serif;
+		    text-transform: uppercase;
+		    padding-bottom: 10px;
+		}
 	}
 }
 /*Form*/
