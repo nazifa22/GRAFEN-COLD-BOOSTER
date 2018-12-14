@@ -14,8 +14,9 @@ body {
 
 /*Form*/
 .form-section {
-	background-image: url(../../images/blue-bg.png);
+	background-image: url(../../images/blue-bg.jpg);
 	height: 337px;
+	background-size: cover;
 
 	.form {
 	    @extend %form;
